@@ -672,7 +672,7 @@ dev = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "loguru", specifier = ">=0.7" }]
+requires-dist = [{ name = "loguru" }]
 
 [package.metadata.requires-dev]
 dev = [
