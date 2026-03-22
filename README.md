@@ -56,12 +56,15 @@ Run tests:
 
 ```bash
 uv run pytest
+uv run pytest tests/test_app.py::test_main_logs_greeting  # single test
+uv run pytest --cov                                       # with coverage (fails below 80%)
 ```
 
-Run tests with coverage:
+## Lint / Format
 
 ```bash
-uv run pytest --cov
+uv run ruff check .
+uv run ruff format .
 ```
 
 ## Documentation
